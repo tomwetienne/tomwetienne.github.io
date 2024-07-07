@@ -24,7 +24,8 @@ author:
   avatar           : "profile.png"
   name             : "Tom W. Etienne"
   pronouns         : # example: "she/her"  
-  bio              : "PhD student in Political Science & Communication at Penn | Research Fellow at Kieskompas"
+  bio1              : "PhD student in Political Science & Communication at Penn"
+  bio2              : "Research Fellow at Kieskompas"
   location         : "Amsterdam & Philadelphia"
   employer         : "University of Pennsylvania"
   employer         : "Kieskompas"
@@ -33,11 +34,11 @@ author:
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=eopxnwsAAAAJ&hl=en"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "http://orcid.org/0000-0002-4299-6593"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : # URL
 
   # Repositories and software development
