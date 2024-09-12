@@ -7,7 +7,8 @@ redirect_from:
   - /about.html
 ---
 
-# About
+About
+===
 I am a joint PhD student in Political Science and in Communication at the University of Pennsylvania, where I focus on topics in political communication, political psychology, and political behavior in Western European multiparty systems. My methodological interests lie predominantly in survey methodology, with most experience in non-probability sample data stemming from voting advice applications. I study how we can reliably use such data in scientific public opinion research. Substantively, my research investigates public opinion around conflict, conspiracy beliefs, and how they interact, studied through the lenses of ideology and political parties.
 
 You can find my Penn profile on the Annenberg School for Communication and the Political Science Department websites. I am being advised by Diana Mutz in Political Science and Yphtach Lelkes in Communication. I am affiliated with the Institute for the Study of Citizens and Politics (ISCAP) and the Center for Information Networks and Democracy (CIND). In 2021-2022, I was the Miller & Lavigne Graduate Fellow and a University Graduate Fellow in Political Science at the Pennsylvania State University, where I focused on quantitative methods in political science research.
