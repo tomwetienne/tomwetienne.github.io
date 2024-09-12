@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-About
+Aboutski
 ===
 I am a joint PhD student in Political Science and in Communication at the University of Pennsylvania, where I focus on topics in political communication, political psychology, and political behavior in Western European multiparty systems. My methodological interests lie predominantly in survey methodology, with most experience in non-probability sample data stemming from voting advice applications. I study how we can reliably use such data in scientific public opinion research. Substantively, my research investigates public opinion around conflict, conspiracy beliefs, and how they interact, studied through the lenses of ideology and political parties.
 
