@@ -24,11 +24,11 @@ author:
   avatar           : "profile.png"
   name             : "Tom W. Etienne"
   pronouns         : # example: "she/her"  
-  bio1              : "PhD student in Political Science & Communication at Penn"
-  bio2              : "Research Fellow at Kieskompas"
+  bio1              : "PhD student in Political Science & Communication at the University of Pennsylvania"
+  bio2              : "Research Fellow at Kieskompas - Election Compass"
   location         : "Amsterdam & Philadelphia"
-  employer         : "University of Pennsylvania"
-  employer         : "Kieskompas"
+  employer1         : "University of Pennsylvania"
+  employer2         : "Kieskompas"
   uri              : # URL
   email            : "tom.etienne[@]asc.upenn.edu" 
 
@@ -45,12 +45,12 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : # Username
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -59,15 +59,15 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : tomwetienne
   mastodon         : # URL
-  medium           : # URL
+  medium           : # Username
   pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : # Username for X / Twitter
+  twitter          : TomWEtienne
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
@@ -123,7 +123,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : @TomWEtienne
 facebook:
   username               :
   app_id                 :
