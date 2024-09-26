@@ -21,14 +21,14 @@ repository               : "tomwetienne/tomwetienne.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile_pic_ASC.jpg"
   name             : "Tom W. Etienne"
   pronouns         : # example: "she/her"  
   bio1              : "PhD student in Political Science & Communication at the University of Pennsylvania"
   bio2              : "Research Fellow at Kieskompas - Election Compass"
   location         : "Amsterdam & Philadelphia"
   employer1         : "University of Pennsylvania"
-  employer2         : "Kieskompas"
+  employer2         : "Kieskompas - Election Compass"
   uri              : # URL
   email            : "tom.etienne[@]asc.upenn.edu" 
 
@@ -45,7 +45,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : # Username
+  github           : "tomwetienne"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -59,7 +59,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : tomwetienne
+  linkedin         : "tomwetienne"
   mastodon         : # URL
   medium           : # Username
   pinterest        : # Username
@@ -67,7 +67,7 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : TomWEtienne
+  twitter          : "TomWEtienne"
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
