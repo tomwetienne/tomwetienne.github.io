@@ -26,7 +26,8 @@ author:
   pronouns         : # example: "she/her"  
   bio1              : "PhD student in Political Science & Communication at the University of Pennsylvania"
   bio2              : "Research Fellow at Kieskompas - Election Compass"
-  location         : "Amsterdam & Philadelphia"
+  location1         : "Philadelphia"
+  location2         : "Amsterdam"
   employer1         : "University of Pennsylvania"
   employer2         : "Kieskompas - Election Compass"
   uri              : # URL
