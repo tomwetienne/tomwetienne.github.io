@@ -11,6 +11,8 @@ author_profile: true
 
 {% include base_path %}
 
+[here](https://tomwetienne.github.io/files/CVs/ETIENNE_T_W_CV_20240911.pdf)
+
 <!---{% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}--->
