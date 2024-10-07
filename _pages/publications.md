@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">I'm still working on this page. For now, you can also find my publications on <a href="{{site.author.googlescholar}}">my Google Scholar profile or my [CV](https://tomwetienne.github.io/files/CVs/ETIENNE_T_W_CV_20240911.pdf)</a>.</div>
 {% endif %}
 
 {% include base_path %}
