@@ -1,10 +1,10 @@
 # main links links
 main:
-  - title: "Publications"
-    url: /publications/ 
+  #- title: "Publications"
+  #  url: /publications/ 
 
-  - title: "Teaching"
-    url: /teaching/    
+  #- title: "Teaching"
+  #  url: /teaching/    
 
   - title: "CV"
     url: /cv/
@@ -12,6 +12,6 @@ main:
   - title: "Voting Advice Applications"
     url: /vaas/
 
-  - title: "Affiliations"
-    url: /affiliations/
+  #- title: "Affiliations"
+  #  url: /affiliations/
     
