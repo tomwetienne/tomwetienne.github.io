@@ -21,18 +21,15 @@
     {% if author.bio1 %}<p class="author__bio"><strong>{{ author.bio1 }}</strong></p>{% endif %}
   </div>
 
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      <!-- Font Awesome icons / Biographic information  -->
-      {% if author.employer1 %}
-        <li class="author__desktop"><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer1 }}</li>
-      {% endif %}
-      {% if author.location1 %}
-        <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location1 }}</li>
-      {% endif %}
-    </ul>
-  </div>
+  <ul class="author__job-meta">
+    <!-- Always-visible institution/location info (no Follow button: this list is static text, not a link menu) -->
+    {% if author.employer1 %}
+      <li><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer1 }}</li>
+    {% endif %}
+    {% if author.location1 %}
+      <li><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location1 }}</li>
+    {% endif %}
+  </ul>
 
 <hr width="90%" size="2">
 <!-- JOB 2  -->
@@ -42,18 +39,15 @@
     {% if author.bio2 %}<p class="author__bio"><strong>{{ author.bio2 }}</strong></p>{% endif %}
   </div>
 
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      <!-- Font Awesome icons / Biographic information  -->
-      {% if author.employer2 %}
-        <li class="author__desktop"><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer2 }}</li>
-      {% endif %}
-      {% if author.location2 %}
-        <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location2 }}</li>
-      {% endif %}
-    </ul>
-  </div>
+  <ul class="author__job-meta">
+    <!-- Always-visible institution/location info (no Follow button: this list is static text, not a link menu) -->
+    {% if author.employer2 %}
+      <li><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer2 }}</li>
+    {% endif %}
+    {% if author.location2 %}
+      <li><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location2 }}</li>
+    {% endif %}
+  </ul>
 
 <hr width="90%" size="2">
 <!-- SOCIALS  -->
