@@ -14,7 +14,14 @@
   margin-bottom: 1em;
 
   @media screen and (min-width: $sidebar-screen-min-width) {
-    height: 100vh;
+    // The .sticky class (see _utilities.scss) also sets `top: 2em` on this
+    // same element for the sticky/fixed positioning trick. With
+    // `height: 100vh` that pushed the box 2em past the bottom of the
+    // viewport, clipping off the last item(s) in the sidebar (e.g. the
+    // last social link) so they could never be scrolled into view.
+    // Subtracting that same offset here keeps the box's bottom edge
+    // exactly at the viewport's bottom edge.
+    height: calc(100vh - 2em);
     overflow-y: auto;               // Add scrollbar if the sidebar is too long
     position: fixed;
     padding-top: $masthead-height;
@@ -76,12 +83,28 @@
    Author profile and links
    ========================================================================== */
 
+// Row containing the avatar and the Follow button/social menu, side by
+// side on mobile. On desktop each theme rule below already stacks its own
+// element full-width (avatar on top, social list below), so this just
+// falls back to a plain block container there.
+.author__header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+
+  @include breakpoint($large) {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+
 .author__avatar {
-  display: table-cell;
+  display: block;
   vertical-align: top;
-  width: 36px;
+  width: 64px;
   // set width only, for non-square avatars
-  // height: 36px;
+  // height: 64px;
 
   @include breakpoint($large) {
     display: block;
@@ -90,7 +113,7 @@
   }
 
   img {
-    max-width: 175px;
+    max-width: 210px;
     border-radius: 50%;
 
     @include breakpoint($large) {
