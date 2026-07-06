@@ -135,6 +135,21 @@
   }
 }
 
+// Institution / location line under each affiliation. Always visible (mobile
+// and desktop) since it's static text, not a link menu behind a Follow button.
+.author__job-meta {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style-type: none;
+  font-family: $sans-serif;
+  font-size: $type-size-5;
+
+  li {
+    white-space: nowrap;
+    margin-bottom: 5px;
+  }
+}
+
 .author__pronouns {
   margin: 0;
 
