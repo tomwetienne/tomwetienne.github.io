@@ -6,54 +6,19 @@
 
 <div itemscope itemtype="http://schema.org/Person">
 
-  <div class="author__avatar">
-    {% if author.avatar contains "://" %}
+  <div class="author__header">
+    <div class="author__avatar">
+      {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}">
-    {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
-    {% endif %}
-  </div>
+      {% else %}
+      	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
+      {% endif %}
+    </div>
 
-<!-- JOB 1  -->
-  <div class="author__content">
-    <!--<h3 class="author__name">{{ author.name }}</h3>-->
-    {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
-    {% if author.bio1 %}<p class="author__bio"><strong>{{ author.bio1 }}</strong></p>{% endif %}
-  </div>
-
-  <ul class="author__job-meta">
-    <!-- Always-visible institution/location info (no Follow button: this list is static text, not a link menu) -->
-    {% if author.employer1 %}
-      <li><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer1 }}</li>
-    {% endif %}
-    {% if author.location1 %}
-      <li><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location1 }}</li>
-    {% endif %}
-  </ul>
-
-<hr width="90%" size="2">
-<!-- JOB 2  -->
-  <div class="author__content">
-    <!--<h3 class="author__name">{{ author.name }}</h3>-->
-    {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
-    {% if author.bio2 %}<p class="author__bio"><strong>{{ author.bio2 }}</strong></p>{% endif %}
-  </div>
-
-  <ul class="author__job-meta">
-    <!-- Always-visible institution/location info (no Follow button: this list is static text, not a link menu) -->
-    {% if author.employer2 %}
-      <li><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer2 }}</li>
-    {% endif %}
-    {% if author.location2 %}
-      <li><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location2 }}</li>
-    {% endif %}
-  </ul>
-
-<hr width="90%" size="2">
-<!-- SOCIALS  -->
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
+    <!-- SOCIALS  -->
+    <div class="author__urls-wrapper">
+      <button class="btn btn--inverse">Follow</button>
+      <ul class="author__urls social-icons">
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
@@ -177,6 +142,43 @@
       {% if author.zhihu %}
       <li><a href="{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
       {% endif %}      
-    </ul>
+      </ul>
+    </div>
   </div>
+
+  <!-- JOB 1  -->
+  <div class="author__content">
+    <!--<h3 class="author__name">{{ author.name }}</h3>-->
+    {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
+    {% if author.bio1 %}<p class="author__bio"><strong>{{ author.bio1 }}</strong></p>{% endif %}
+  </div>
+
+  <ul class="author__job-meta">
+    <!-- Always-visible institution/location info (no Follow button: this list is static text, not a link menu) -->
+    {% if author.employer1 %}
+      <li><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer1 }}</li>
+    {% endif %}
+    {% if author.location1 %}
+      <li><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location1 }}</li>
+    {% endif %}
+  </ul>
+
+<!-- JOB 2  -->
+  <div class="author__content">
+    <!--<h3 class="author__name">{{ author.name }}</h3>-->
+    {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
+    {% if author.bio2 %}<p class="author__bio"><strong>{{ author.bio2 }}</strong></p>{% endif %}
+  </div>
+
+  <ul class="author__job-meta">
+    <!-- Always-visible institution/location info (no Follow button: this list is static text, not a link menu) -->
+    {% if author.employer2 %}
+      <li><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer2 }}</li>
+    {% endif %}
+    {% if author.location2 %}
+      <li><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location2 }}</li>
+    {% endif %}
+  </ul>
+
+<hr width="90%" size="2">
 </div>
