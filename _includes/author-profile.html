@@ -180,5 +180,20 @@
     {% endif %}
   </ul>
 
+<!-- JOB 3  -->
+  <div class="author__content">
+    {% if author.bio3 %}<p class="author__bio"><strong>{{ author.bio3 }}</strong></p>{% endif %}
+  </div>
+
+  <ul class="author__job-meta">
+    <!-- Always-visible institution/location info (no Follow button: this list is static text, not a link menu) -->
+    {% if author.employer3 %}
+      <li><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer3 }}</li>
+    {% endif %}
+    {% if author.location3 %}
+      <li><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location3 }}</li>
+    {% endif %}
+  </ul>
+
 <hr width="90%" size="2">
 </div>

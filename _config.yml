@@ -26,10 +26,13 @@ author:
   pronouns         : # example: "she/her"  
   bio1              : "PhD candidate in Political Science & Communication"
   bio2              : "Senior Research Fellow"
+  bio3              : "Academic Fellow (2026-2027)"
   location1         : "Philadelphia"
   location2         : "Amsterdam"
+  location3         : "Rotterdam"
   employer1         : "University of Pennsylvania"
   employer2         : "Kieskompas - Election Compass"
+  employer3         : "Erasmus University Rotterdam"
   uri              : # URL
   email            : "tom.etienne[@]asc.upenn.edu" 
 
