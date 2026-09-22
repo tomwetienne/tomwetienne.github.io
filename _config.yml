@@ -25,10 +25,10 @@ author:
   name             : "Tom W. Etienne"
   pronouns         : # example: "she/her"  
   bio1              : "PhD candidate in Political Science & Communication"
-  bio2              : "Academic Fellow (2026-2027)"
+  bio2              : "Academic Fellow"
   bio3              : "Senior Research Fellow"
   location1         : "Philadelphia"
-  location2         : "Rotterdam"
+  location2         : # blank: "Erasmus University Rotterdam" already names the city
   location3         : "Amsterdam"
   employer1         : "University of Pennsylvania"
   employer2         : "Erasmus University Rotterdam"
