@@ -153,15 +153,10 @@
     {% if author.bio1 %}<p class="author__bio"><strong>{{ author.bio1 }}</strong></p>{% endif %}
   </div>
 
-  <ul class="author__job-meta">
-    <!-- Always-visible institution/location info (no Follow button: this list is static text, not a link menu) -->
-    {% if author.employer1 %}
-      <li><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer1 }}</li>
-    {% endif %}
-    {% if author.location1 %}
-      <li><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location1 }}</li>
-    {% endif %}
-  </ul>
+  <!-- Always-visible "Institution, location" line (plain text, not a link menu) -->
+  {% if author.employer1 or author.location1 %}
+    <p class="author__job-meta">{{ author.employer1 }}{% if author.employer1 and author.location1 %}, {% endif %}{{ author.location1 }}</p>
+  {% endif %}
 
 <!-- JOB 2  -->
   <div class="author__content">
@@ -170,30 +165,20 @@
     {% if author.bio2 %}<p class="author__bio"><strong>{{ author.bio2 }}</strong></p>{% endif %}
   </div>
 
-  <ul class="author__job-meta">
-    <!-- Always-visible institution/location info (no Follow button: this list is static text, not a link menu) -->
-    {% if author.employer2 %}
-      <li><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer2 }}</li>
-    {% endif %}
-    {% if author.location2 %}
-      <li><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location2 }}</li>
-    {% endif %}
-  </ul>
+  <!-- Always-visible "Institution, location" line (plain text, not a link menu) -->
+  {% if author.employer2 or author.location2 %}
+    <p class="author__job-meta">{{ author.employer2 }}{% if author.employer2 and author.location2 %}, {% endif %}{{ author.location2 }}</p>
+  {% endif %}
 
 <!-- JOB 3  -->
   <div class="author__content">
     {% if author.bio3 %}<p class="author__bio"><strong>{{ author.bio3 }}</strong></p>{% endif %}
   </div>
 
-  <ul class="author__job-meta">
-    <!-- Always-visible institution/location info (no Follow button: this list is static text, not a link menu) -->
-    {% if author.employer3 %}
-      <li><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer3 }}</li>
-    {% endif %}
-    {% if author.location3 %}
-      <li><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location3 }}</li>
-    {% endif %}
-  </ul>
+  <!-- Always-visible "Institution, location" line (plain text, not a link menu) -->
+  {% if author.employer3 or author.location3 %}
+    <p class="author__job-meta">{{ author.employer3 }}{% if author.employer3 and author.location3 %}, {% endif %}{{ author.location3 }}</p>
+  {% endif %}
 
 <hr width="90%" size="2">
 </div>
