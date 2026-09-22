@@ -101,7 +101,8 @@
 .author__avatar {
   display: block;
   vertical-align: top;
-  width: 64px;
+  // Larger on phones now that the Follow button no longer shares this row.
+  width: 140px;
   // set width only, for non-square avatars
   // height: 64px;
 

@@ -12,7 +12,49 @@ var $hlinks = $('#site-nav .hidden-links');
 
 var breaks = [];
 
+// At or below this width every link lives in the dropdown, so the top bar
+// shows the site title and the menu button only. Matches $medium in
+// _variables.scss. Above it the original greedy behaviour applies: links
+// stay visible until they no longer fit.
+var MOBILE_BREAKPOINT = 768;
+var forcedCollapse = false;
+
+// Move every link into the dropdown at once, keeping their order.
+function collapseAllLinks() {
+  var $items = $vlinks.children('*:not(.masthead__menu-item--lg)');
+
+  if ($items.length) {
+    $hlinks.prepend($items);
+  }
+
+  breaks = [];
+  forcedCollapse = true;
+  $btn.removeClass('hidden');
+}
+
+// Hand the links back to the top bar so the greedy measuring can run again.
+function restoreAllLinks() {
+  $vlinks.append($hlinks.children());
+
+  breaks = [];
+  forcedCollapse = false;
+  $hlinks.addClass('hidden');
+  $btn.addClass('hidden').removeClass('close');
+}
+
 function updateNav() {
+
+  if ($(window).width() <= MOBILE_BREAKPOINT) {
+    if (!forcedCollapse) {
+      collapseAllLinks();
+    }
+    $btn.attr("count", $hlinks.children().length);
+    return;
+  }
+
+  if (forcedCollapse) {
+    restoreAllLinks();
+  }
 
   var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
 
